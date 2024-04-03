@@ -183,7 +183,7 @@ class WooProduct {
         taxStatus = json['tax_status'],
         taxClass = json['tax_class'],
         manageStock = json['manage_stock'],
-        stockQuantity = json['stock_quantity'],
+        stockQuantity = int.tryParse(json['stock_quantity']),
         stockStatus = json['stock_status'],
         backorders = json['backorders'],
         backordersAllowed = json['backorders_allowed'],
@@ -194,7 +194,7 @@ class WooProduct {
         shippingRequired = json['shipping_required'],
         shippingTaxable = json['shipping_taxable'],
         shippingClass = json['shipping_class'],
-        shippingClassId = json['shipping_class_id'],
+        shippingClassId = json['shipping_class_id'],stockQuantity
         reviewsAllowed = json['reviews_allowed'],
         averageRating = json['average_rating'],
         ratingCount = json['rating_count'],
