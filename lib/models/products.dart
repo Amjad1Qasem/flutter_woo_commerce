@@ -183,7 +183,7 @@ class WooProduct {
         taxStatus = json['tax_status'],
         taxClass = json['tax_class'],
         manageStock = json['manage_stock'],
-        stockQuantity = int.tryParse(json['stock_quantity']),
+        stockQuantity = int.tryParse(json['stock_quantity'].toString()),
         stockStatus = json['stock_status'],
         backorders = json['backorders'],
         backordersAllowed = json['backorders_allowed'],
