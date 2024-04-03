@@ -194,7 +194,7 @@ class WooProduct {
         shippingRequired = json['shipping_required'],
         shippingTaxable = json['shipping_taxable'],
         shippingClass = json['shipping_class'],
-        shippingClassId = json['shipping_class_id'],stockQuantity
+        shippingClassId = json['shipping_class_id'],
         reviewsAllowed = json['reviews_allowed'],
         averageRating = json['average_rating'],
         ratingCount = json['rating_count'],
