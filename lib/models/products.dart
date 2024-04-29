@@ -290,34 +290,35 @@ class WooProductDefaultAttribute {
 
 class WooProductImage {
   final int? id;
-  final DateTime? dateCreated;
-  final DateTime? dateCreatedGMT;
-  final DateTime? dateModified;
-  final DateTime? dateModifiedGMT;
+  // final DateTime? dateCreated;
+  // final DateTime? dateCreatedGMT;
+  // final DateTime? dateModified;
+  // final DateTime? dateModifiedGMT;
   final String? src;
   final String? name;
   final String? alt;
 
-  WooProductImage(this.id, this.src, this.name, this.alt, this.dateCreated,
-      this.dateCreatedGMT, this.dateModified, this.dateModifiedGMT);
+  WooProductImage(this.id, this.src, this.name, this.alt, 
+                  // this.dateCreated, this.dateCreatedGMT, this.dateModified, this.dateModifiedGMT,
+                 );
 
   WooProductImage.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         src = json['src'],
         name = json['name'],
         alt = json['alt'],
-        dateCreated = DateTime.parse(json['date_created']),
-        dateModifiedGMT = DateTime.parse(json['date_modified_gmt']),
-        dateModified = DateTime.parse(json['date_modified']),
-        dateCreatedGMT = DateTime.parse(json['date_created_gmt']);
+        // dateCreated = DateTime.parse(json['date_created']),
+        // dateModifiedGMT = DateTime.parse(json['date_modified_gmt']),
+        // dateModified = DateTime.parse(json['date_modified']),
+        // dateCreatedGMT = DateTime.parse(json['date_created_gmt']);
     
   Map<String, dynamic> toJson() {
    return {
      'id': id,
-     'date_created': dateCreated.toIso8601String(),
-     'date_created_gmt': dateCreatedGMT.toIso8601String(),
-     'date_modified': dateModified.toIso8601String(),
-     'date_modified_gmt': dateModifiedGMT.toIso8601String(),
+     // 'date_created': dateCreated.toIso8601String(),
+     // 'date_created_gmt': dateCreatedGMT.toIso8601String(),
+     // 'date_modified': dateModified.toIso8601String(),
+     // 'date_modified_gmt': dateModifiedGMT.toIso8601String(),
      'src': src,
      'name': name,
      'alt': alt,
