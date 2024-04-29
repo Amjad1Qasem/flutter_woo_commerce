@@ -310,6 +310,18 @@ class WooProductImage {
         dateModifiedGMT = DateTime.parse(json['date_modified_gmt']),
         dateModified = DateTime.parse(json['date_modified']),
         dateCreatedGMT = DateTime.parse(json['date_created_gmt']);
+    
+  Map<String, dynamic> toJson() {
+   return {
+     'id': id,
+     // 'date_created': dateCreated.toIso8601String(),
+     // 'date_created_gmt': dateCreatedGMT.toIso8601String(),
+     // 'date_modified': dateModified.toIso8601String(),
+     // 'date_modified_gmt': dateModifiedGMT.toIso8601String(),
+     'src': src,
+     'name': name,
+     'alt': alt,
+   };
 }
 
 ///
