@@ -290,10 +290,10 @@ class WooProductDefaultAttribute {
 
 class WooProductImage {
   final int? id;
-  final DateTime dateCreated;
-  final DateTime dateCreatedGMT;
-  final DateTime dateModified;
-  final DateTime dateModifiedGMT;
+  final DateTime? dateCreated;
+  final DateTime? dateCreatedGMT;
+  final DateTime? dateModified;
+  final DateTime? dateModifiedGMT;
   final String? src;
   final String? name;
   final String? alt;
