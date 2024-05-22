@@ -167,9 +167,9 @@ class WooProduct {
         description = json['description'],
         shortDescription = json['short_description'],
         sku = json['sku'],
-        price = double.tryParse(json['price'].toString());
-        regularPrice = double.tryParse(json['regular_price'].toString());
-        salePrice = double.tryParse(json['sale_price'].toString());
+        price = double.tryParse(json['price'].toString()),
+        regularPrice = double.tryParse(json['regular_price'].toString()),
+        salePrice = double.tryParse(json['sale_price'].toString()),
         priceHtml = json['price_html'],
         onSale = json['on_sale'],
         purchasable = json['purchasable'],
