@@ -46,6 +46,9 @@ class WooProduct {
   final String? description;
   final String? shortDescription;
   final String? sku;
+  // final double? price;
+  // final double? regularPrice;
+  // final double? salePrice;
   final double? price;
   final double? regularPrice;
   final double? salePrice;
@@ -164,9 +167,9 @@ class WooProduct {
         description = json['description'],
         shortDescription = json['short_description'],
         sku = json['sku'],
-        price = json['price'],
-        regularPrice = json['regular_price'],
-        salePrice = json['sale_price'],
+        price = double.tryParse(json['price']);
+        regularPrice = double.tryParse(json['regular_price']);
+        salePrice = double.tryParse(json['sale_price']);
         priceHtml = json['price_html'],
         onSale = json['on_sale'],
         purchasable = json['purchasable'],
@@ -353,6 +356,7 @@ class WooProductImage {
 ///   @override toString() => toJson().toString();
 /// }
 ///
+
 
 class WooProductDimension {
   final String? length;
